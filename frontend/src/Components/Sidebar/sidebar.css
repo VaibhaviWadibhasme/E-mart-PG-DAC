@@ -1,0 +1,73 @@
+/* src/components/Sidebar.css */
+.sidebar {
+    height: 50vh;
+    
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding-top: 20px;
+    transition: width 0.3s;
+  }
+  
+  /*.sidebar.collapsed {
+    width: 80px;
+  }*/
+  
+ /* .sidebar .toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    cursor: pointer;
+    background: white;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+  }*/
+  
+ /* .sidebar .toggle-btn:hover {
+    background: white;
+  }*/
+
+  .ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+  }
+  .link{
+    padding: 10px 15px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;  
+    font-weight: 400;
+    
+  }
+  .sidebar Link {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar link:hover {
+    background-color:white;
+    color: rgb(15, 15, 15);
+  }
+  
+  /*.content {
+    margin-left: 260px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+  }*/
+  
+ /* .sidebar.collapsed ~ .content {
+    margin-left: 100px;
+  }*/
+  .flex-column .nav-link{
+     color: #000;
+  }
+  .sidebar h3{
+    color: red;
+    
+  }

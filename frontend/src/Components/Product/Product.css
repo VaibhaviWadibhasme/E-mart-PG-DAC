@@ -1,0 +1,147 @@
+.product-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  width: 320px; /* Fixed width for consistency */
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1);
+}
+
+.product-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0;
+  text-align: center;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.product-card:hover .product-name {
+  color: #007bff;
+}
+
+.product-short-desc, .product-long-desc {
+  font-size: 1em;
+  color: #555;
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1.5;
+  transition: color 0.3s ease-in-out;
+}
+
+.product-card:hover .product-short-desc,
+.product-card:hover .product-long-desc {
+  color: #333;
+}
+
+.product-prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.product-mrp-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.product-offer-price {
+  font-size: 1.3em;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.product-offer-price span {
+  display: block;
+}
+
+.Details {
+  cursor: pointer;
+  color: #6e6e6f;
+  font-size: 1em;
+  
+  margin-top: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.Dtails:hover {
+  color: #0056b3;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.add-to-cart-button, .buy-now-button {
+  border: none;
+  border-radius: 8px; 
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 48%; 
+}
+
+.add-to-cart-button {
+  background-color: none; 
+  color: black;
+}
+
+.add-to-cart-button:hover {
+  background-color: red; 
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart-button:active {
+  background-color: #cc5a00; /* Even darker orange for active state */
+  transform: translateY(2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buy-now-button {
+  background-color: none;
+  color: black;
+}
+
+.buy-now-button:hover {
+  background-color: red; 
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.buy-now-button:active {
+  background-color: #cc5a00; /* Even darker orange for active state */
+  transform: translateY(2px);
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+}
